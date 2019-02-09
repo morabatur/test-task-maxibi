@@ -51,7 +51,10 @@ public class Meta {
     }
 
     public Meta(String href, String metadataHref, String type, String mediaType, String uuidHref) {
-        this(href, metadataHref,type, mediaType);
+        this.href = href;
+        this.metadataHref = metadataHref;
+        this.type = type;
+        this.mediaType = mediaType;
         this.uuidHref = uuidHref;
     }
 
@@ -98,7 +101,7 @@ public class Meta {
 
     @Override
     public String toString() {
-        return "Meta{" +
+        return "metainfo{" +
                 "href='" + href + '\'' +
                 ", metadataHref='" + metadataHref + '\'' +
                 ", type='" + type + '\'' +

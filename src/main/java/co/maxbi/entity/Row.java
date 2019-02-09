@@ -4,7 +4,7 @@ package co.maxbi.entity;
 import java.util.Date;
 
 public class Row {
-    private Meta meataDataRow;
+   // private Meta meta;
     private String id;
     private String accountId;
     private Owner owner;
@@ -22,9 +22,9 @@ public class Row {
     private Agent agent;
     private Organization organization;
     private State state;
-    private Documents doc;
+    private Documents documents;
     private Date created;
-    private Position position;
+    private Position positions;
     private boolean vatEnabled;
     private boolean vatIncluded;
     private float vatSum;
@@ -37,12 +37,12 @@ public class Row {
     public Row() {
     }
 
-    public Row(Meta meataDataRow, String id, String accountId, Owner owner, boolean shared, Group group, int version,
+    public Row(/*Meta meataDataRow,*/ String id, String accountId, Owner owner, boolean shared, Group group, int version,
                Date updated, String name, String externalCode, String moment, boolean applicable, Rate rate, float sum,
                Store store, Agent agent, Organization organization, State state, Documents doc, Date created,
                Position position, boolean vatEnabled, boolean vatIncluded, float vatSum, float payedSum,
                float shippedSum, float invoicedSum, float reservedSum) {
-        this.meataDataRow = meataDataRow;
+       // this.meta = meataDataRow;
         this.id = id;
         this.accountId = accountId;
         this.owner = owner;
@@ -60,9 +60,9 @@ public class Row {
         this.agent = agent;
         this.organization = organization;
         this.state = state;
-        this.doc = doc;
+        this.documents = doc;
         this.created = created;
-        this.position = position;
+        this.positions = position;
         this.vatEnabled = vatEnabled;
         this.vatIncluded = vatIncluded;
         this.vatSum = vatSum;
@@ -71,14 +71,14 @@ public class Row {
         this.invoicedSum = invoicedSum;
         this.reservedSum = reservedSum;
     }
-
-    public Meta getMeataDataRow() {
-        return meataDataRow;
-    }
-
-    public void setMeataDataRow(Meta meataDataRow) {
-        this.meataDataRow = meataDataRow;
-    }
+//
+//    public Meta getMeta() {
+//        return meta;
+//    }
+//
+//    public void setMeta(Meta meta) {
+//        this.meta = meta;
+//    }
 
     public String getId() {
         return id;
@@ -216,12 +216,12 @@ public class Row {
         this.state = state;
     }
 
-    public Documents getDoc() {
-        return doc;
+    public Documents getDocuments() {
+        return documents;
     }
 
-    public void setDoc(Documents doc) {
-        this.doc = doc;
+    public void setDocuments(Documents documents) {
+        this.documents = documents;
     }
 
     public Date getCreated() {
@@ -232,12 +232,12 @@ public class Row {
         this.created = created;
     }
 
-    public Position getPosition() {
-        return position;
+    public Position getPositions() {
+        return positions;
     }
 
-    public void setPosition(Position position) {
-        this.position = position;
+    public void setPositions(Position positions) {
+        this.positions = positions;
     }
 
     public boolean isVatEnabled() {
@@ -300,7 +300,7 @@ public class Row {
     @Override
     public String toString() {
         return "Row{" +
-                "meataDataRow=" + meataDataRow +
+//                "meta=" + meta +
                 ", id='" + id + '\'' +
                 ", accountId='" + accountId + '\'' +
                 ", owner=" + owner +
@@ -318,9 +318,9 @@ public class Row {
                 ", agent=" + agent +
                 ", organization=" + organization +
                 ", state=" + state +
-                ", doc=" + doc +
+                ", documents=" + documents +
                 ", created=" + created +
-                ", position=" + position +
+                ", positions=" + positions +
                 ", vatEnabled=" + vatEnabled +
                 ", vatIncluded=" + vatIncluded +
                 ", vatSum=" + vatSum +
