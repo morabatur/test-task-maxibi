@@ -1,0 +1,3 @@
+8:1: The INSERT statement conflicted with the FOREIGN KEY constraint "FK__Orders__counterp__5165187F". The conflict occurred in database "testAzureSQL", table "Roman.Clients", column 'id'.
+9:1: The INSERT statement conflicted with the FOREIGN KEY constraint "FK__Orders__counterp__5165187F". The conflict occurred in database "testAzureSQL", table "Roman.Clients", column 'id'.
+11:1: The INSERT statement conflicted with the FOREIGN KEY constraint "FK__Orders__counterp__5165187F". The conflict occurred in database "testAzureSQL", table "Roman.Clients", column 'id'.
